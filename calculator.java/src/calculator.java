@@ -25,12 +25,17 @@ public class calculator {
                 result = num1 + num2;
                 System.out.println("The result of addition is: " + result);
                 break;
+                
+            case2:
+		result=num1-num2;
+		System.out.println("Theresultofsubtractionis:"+result);
+		break;
 
-            case 2:
+            case 3:
                 result = num1 * num2;
                 System.out.println("The result of multiplication is: " + result);
                 break;
-            case 3:
+            case 4:
                 if (num2 != 0) {
                     result = num1 / num2;
                     System.out.println("The result of division is: " + result);
