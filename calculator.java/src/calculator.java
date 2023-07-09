@@ -16,7 +16,7 @@ public class calculator {
         System.out.println("1. Addition");
         System.out.println("2. Subtraction");
         System.out.println("3. Multiplication");
-       
+        System.out.println("4.Division");
         int operation = scanner.nextInt();
 
         switch (operation) {
@@ -34,7 +34,16 @@ public class calculator {
                 result = num1 * num2;
                 System.out.println("The result of multiplication is: " + result);
                 break;
-            
+
+            case4:
+		if(num2!=0){
+			result=num1/num2;
+			System.out.println("Theresultofdivisionis:"+result);
+		}else{
+			System.out.println("Cannotdividebyzero.");
+		}
+		break;
+
             default:
                 System.out.println("Invalid operation.");
         }
